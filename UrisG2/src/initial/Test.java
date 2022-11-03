@@ -46,7 +46,7 @@ public class Test {
 		}*/
 		
 		// ZADATAK 3 - VEZBE 2
-		System.out.println("Unesite broj u konzolu");
+		/*System.out.println("Unesite broj u konzolu");
 		Scanner it = new Scanner(System.in);
 		int broj = it.nextInt();
 		if(broj>200) {
@@ -58,7 +58,7 @@ public class Test {
 				// rezultat = rezultat + i;
 			}
 			System.out.println("Zbir svih parnih brojeva je: " + rezultat);
-		}
+		}*/
 		
 		//Izracunati broj prestupnih godina od 2022. do 2100.
 		/*int zbir = 0;
@@ -71,14 +71,58 @@ public class Test {
 			}
 		}*/
 		
-		int zbir = 0;
+		/*int zbir = 0;
 		for(int i = 2022; i<=2100; i = i+2) {
 			if(i%4 == 0) {
 				zbir++;
 			}
 		}
 		
-		System.out.println("Broj prestupnih godina je: " +zbir);
+		System.out.println("Broj prestupnih godina je: " +zbir);*/
+		
+		
+		//Vezbe 3 - Zadatak 1
+		
+		/*Scanner sc = new Scanner(System.in);
+		System.out.println("Unesite broj od 1 do 9");
+		int number = sc.nextInt();
+		
+		int brojac = 1;
+		while(brojac<10) {
+			System.out.println(number*brojac);
+			brojac++;
+		}*/
+		
+		//Vezbe 3  - Zadatak 2
+		/*Scanner sc = new Scanner(System.in);
+		System.out.println("Unesite trocifreni broj");
+		int number = sc.nextInt();
+		
+		//654 
+		if(number>=1000 || number<100) {
+			System.out.println("Broj mora biti trocifren!!");
+		}else {
+			int stotina = number/100;
+			int jedinica = number%10;
+			System.out.println("Stotina je: " + stotina  + ",a jedinica: " + jedinica);
+		}*/
+		
+		//Vezbe 3 - Zadatak 3
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Unesite trocifreni broj");
+		int number = sc.nextInt();
+		
+		//654 
+		if(number>=1000 || number<100) {
+			System.out.println("Broj mora biti trocifren!!");
+		}else {
+			int stotina = number/100; 
+			int jedinica = number%10;
+			int desetica = (number - stotina*100 - jedinica)/10;
+			System.out.println("Suma cifara unetog broja: " +number+ " je: " +(jedinica+desetica+stotina));
+		}
+		
+		
 		
 	}
 
